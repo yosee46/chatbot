@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ChatbotCreateTable
+class ChatbotRailsCreate<%= table_name.camelize %>Table < ActiveRecord::Migration<%= migration_version %>
   def change
     create_table :chatbot_scenarios, id: false do |t|
       t.column :id, :'CHAR(16)', null: false
